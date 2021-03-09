@@ -1,0 +1,56 @@
+{
+  "name": "test-front-populaire",
+  "version": "1.0.0",
+  "description": "Test front populaire du 9/3/21",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config ./build/webpack.api.base.babel.js",
+    "clean": "./node_modules/.bin/rimraf ./dist",
+    "eslint": "./node_modules/.bin/eslint --color --format stylish ./src --fix",
+    "prebuild": "npm run clean",
+    "start": "./node_modules/.bin/babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Bonnet",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:OriaLogic/test-front-populaire.git"
+  },
+  "keywords": [
+    "nodejs",
+    "boilerplate",
+    "es6",
+    "es2015",
+    "babel",
+    "express",
+    "lint"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "file-loader": "^1.1.6",
+    "json-loader": "^0.5.7",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "1.18.2",
+    "cors": "2.8.4",
+    "express": "4.16.2",
+    "moment": "^2.29.1",
+    "morgan": "1.9.0",
+    "winston": "2.4.0",
+    "winston-daily-rotate-file": "1.7.2"
+  },
+  "type": "module"
+}
